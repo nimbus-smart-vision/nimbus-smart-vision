@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NSV - Nimbus Smart Vision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header class="main-header" id='top'>
+    <div class="main-header__box">
+      <div class="main-header__name-box">
+        <a href="index.html" class="main-header__name" onclick="sectionNavBar(0)"> NSV </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item" onclick="sectionNavBar(1)">
+            <a href="#projects" class='english'> Products</a>
+          </li>
+          <li class="main-nav__item" onclick="sectionNavBar(2)">
+            <a href="#partners" class='english'> Partners</a>
+          </li>
+          <li class="main-nav__item" onclick="sectionNavBar(3)">
+            <a href='#background' class='english'> About</a>
+          </li>
+          <li class="main-nav__item" onclick="contactOverlayOn()">
+            <a href='javascript:void(0);' class='english'> Contact</a>
+          </li>
+        </ul>
+        <ul>
+          <i class="fa fa-bars hamburger-icon" id="hamburger" onclick="responsiveHamburger()"></i>
+        </ul>
+        <ul>
+
+        </ul>
+      </nav>
+      <div class="main-info">
+        <div class="main-info__portrait">
+          <img src="images/nsv-logo0.png" class="main-info__profile" />
+        </div>
+        <div class="main-info__text">
+          <h1 class="main-info__greeting english">We are Nimbus Smart Vision</h1>
+          <h2 class="main-info__presentation english">
+            Our goal is to give sight to the future of tecnology
+          </h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="projects" id="projects">
+    <div class="life-background_title english">
+      <h2>Products</h2>
+    </div>
+    <div class="project-line">
+      <div class="project-box project-box-1">
+        <div class="project-info">
+          <div class="project-info-text english">
+            Take a look at my undergraduate thesis.
+          </div>
+          <div class="repository-btn english">
+            <a href="https://github.com/andre94cavalcante/CloudAnnotationLibrary" target="_blank">Visit
+              Repository
+              &nbsp></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-box  project-box-2">
+        <div class="project-info">
+          <div class="project-info-text english">
+            AWS Project with Serverless Framework.
+          </div>
+          <div class="repository-btn english">
+            <a href="https://github.com/andre94cavalcante/MimooBackendChallenge" target="_blank">Visit Repository
+              &nbsp></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-box  project-box-3">
+        <div class="project-info">
+          <div class="project-info-text english">
+            This responsive website is actually one of my projects.
+          </div>
+          <div class="repository-btn english">
+            <a href="#top">Go up &nbsp&#8593;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="project-line">
+      <div class="project-box project-box-4">
+        <div class="project-info">
+          <div class="project-info-text english">
+            Pioneering CDCC's 3D printing basin project.
+          </div>
+          <div class="repository-btn english">
+            <a href="https://drive.google.com/file/d/1rk1EI0udS73eS6wnIEfdiMsqaxnwo5Z3/view?usp=sharing"
+              target="_blank">Take a look at the paper &nbsp></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-box project-box-5">
+        <div class="project-info">
+          <div class="project-info-text english">
+            API gets .CSV files, builds a MongoDB database and returns a JSON response.
+          </div>
+          <div class="repository-btn english">
+            <a href="https://github.com/andre94cavalcante/csv-converter" target="_blank">Visit
+              Repository &nbsp></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-box project-box-6">
+        <div class="project-info">
+          <div class="project-info-text english">
+            Automated Greenhouse built for the Embedded Systems Discipline.
+          </div>
+          <div class="repository-btn english">
+            <a href="https://github.com/andre94cavalcante/AutomatedGreenhouse" target="_blank">Visit
+              Repository &nbsp></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="partners" id="partners">
+    <div class="life-background_title english">
+      <h2>Partners</h2>
+    </div>
+    <div class="partners-main-info">
+      <div class="partner-info">
+        <img src="./images/Paulo.jpeg" class="partner-profile">
+        <div class="parter-presentation">
+          <h2>Paulo Henrique Polegato - CEO</h2>
+          <div class="partner-credentials">
+            <h2>PhD - Mechatronics, Robotics and Automation Engeneering</h2>
+            <h2>Master - Mechatronics, Robotics and Automation Engeneering</h2>
+            <h2>Bachelor - Automation and Control Engeneering</h2>
+            <h2>Bachelor - Physics</h2>
+          </div>
+          <div class="partner-text">
+            <p>"I am always working to align my values and my actions. In my professional life, I try to have the best
+              of me and my colleagues using trust and acceptation to stimulate passion and pride about the tasks.
+              <br />
+              <br />
+              My experiences in education, academic and industrial R&D, living alone in France and multi-domain studies
+              taught me don't be scared about complex projects, developed new skills, deal with big changes and work
+              with a multicultural team. I believe in constant learning and shared experiences. I feel comfortable
+              working in academic and industrial environments."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="partner-info">
+        <img src="./images/Christian.jpeg" class="partner-profile">
+        <div class="parter-presentation">
+          <h2>Christian Michel Lacerda - CTO</h2>
+          <div class="partner-credentials">
+            <h2>Master - System of Control, Robotics and Machine Learning</h2>
+            <h2>Bachelor - Mechatronics Engeneering</h2>
+          </div>
+          <div class="partner-text">
+            <p>"Mechatronic Engineer and master's student developing research on safety in physical human-robot
+              interaction. An academic career built with excellence as a result of effort, dedication, and the ability
+              to deal with complex situations in a good way.
+              <br />
+              <br />
+              Since I do believe the best knowledge is the one that
+              helps the world to become a better place, I'm always looking for an opportunity to put into practice what
+              I have learned contributing to the development of our society."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="life-background" id="background">
+    <div class="life-background_item">
+      <div class="life-background_title english">
+        <h2>About the Company</h2>
+      </div>
+      <div class="life-background_main-info">
+        <img src="./images/eesc_fachada.png" />
+        <div class="life-background_main-text">
+          <h3 class='english'>Graduated at São Carlos Engeneering School - University of São Paulo</h3>
+          <h3 class='period english'>Since August 2021</h3>
+          <h3 class='subTitle english'>São Carlos-SP, Brazil</h3>
+          <p class='english'>
+            USP introduced me to unprecedented scale and diversity of opportunities and ways of thinking, which pushed
+            me to expand, challenge, and adjust my worldview.
+            <br />
+            <br />
+            My group work, in curricular activities, monitoring and extension groups, taught me that technical knowledge
+            is very important, but also that the lack of it can be supplied by the desire to learn and that people
+            management can be even more valuable than prior knowledge, in different situations.
+            <br />
+            <br />
+            My experiences in the university environment, while making me more humble in relation to my knowledge,
+            motivated me to always want to improve as a professional and as a person.
+            <br />
+            <br />
+            My involvement in USP's technology and innovation initiatives exercised my creativity, aroused my curiosity
+            for learning and understanding the world, and made me realize that to make the world a little better, it is
+            not always necessary to create an extremely complex product. These experiences strengthened my tolerance to
+            adversity and taught me a lot about my capacity and my limits.
+            <br />
+            <br />
+            In addition to providing fertile soil for me to create a love for learning and facing new challenges, USP
+            surrounded me with inspiring friends and colleagues.
+          </p>
+        </div>
+      </div>
+      <div class="life-background_main-info">
+        <img src="./images/eesc_fachada.png" />
+        <div class="life-background_main-text">
+          <h3 class='english'>Graduated at São Carlos Engeneering School - University of São Paulo</h3>
+          <h3 class='period english'>Since August 2021</h3>
+          <h3 class='subTitle english'>São Carlos-SP, Brazil</h3>
+          <p class='english'>
+            USP introduced me to unprecedented scale and diversity of opportunities and ways of thinking, which pushed
+            me to expand, challenge, and adjust my worldview.
+            <br />
+            <br />
+            My group work, in curricular activities, monitoring and extension groups, taught me that technical knowledge
+            is very important, but also that the lack of it can be supplied by the desire to learn and that people
+            management can be even more valuable than prior knowledge, in different situations.
+            <br />
+            <br />
+            My experiences in the university environment, while making me more humble in relation to my knowledge,
+            motivated me to always want to improve as a professional and as a person.
+            <br />
+            <br />
+            My involvement in USP's technology and innovation initiatives exercised my creativity, aroused my curiosity
+            for learning and understanding the world, and made me realize that to make the world a little better, it is
+            not always necessary to create an extremely complex product. These experiences strengthened my tolerance to
+            adversity and taught me a lot about my capacity and my limits.
+            <br />
+            <br />
+            In addition to providing fertile soil for me to create a love for learning and facing new challenges, USP
+            surrounded me with inspiring friends and colleagues.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="social_media">
+    <ul>
+      <li>
+        <a href="mailto:andre.94.cavalcante@gmail.com">
+          <img src="images/gmail.png" alt="On Github" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/andr%C3%A9-cavalcante-b9b4b0130/" target="_blank" alt="Linkedin">
+          <img src="images/linkedin.png" alt="On Linkedin" class='white-bg' />
+        </a>
+      </li>
+      <!-- <li>
+        <a href="https://github.com/andre94cavalcante" target="_blank" alt="Github">
+          <img src="images/iconmonstr-github-3-240.png" alt="On Github" class='white-bg' />
+        </a>
+      </li> -->
+    </ul>
+  </div>
+
+  <div class='contact-overlay' onclick="contactOverlayOff()"></div>
+  <div class='contact-overlay-options-card'>
+    <p class='contact-msg english'>If you wanna get in touch, send an email to <a
+        href='mailto:andre.94.cavalcante@gmail.com'>
+        <b>andre.94.cavalcante@gmail.com</b> </a>or feel free to use any of the following options:</p>
+    <div class='contact-overlay-options'>
+      <a href="https://www.linkedin.com/in/andr%C3%A9-cavalcante-b9b4b0130/" target="_blank" alt="Linkedin">
+        <img src="images/linkedin.png" alt="On Linkedin" />
+      </a>
+      <!-- <a href="https://github.com/andre94cavalcante" target="_blank" alt="Github">
+        <img src="images/iconmonstr-github-3-240.png" alt="On Github" />
+      </a> -->
+    </div>
+  </div>
+
+  <div class="nav-btn">
+    <img src="images/nav-prev.png" class="nav-btn-prev" onclick="navigate(-1)" />
+    <img src="images/nav-next.png" class='nav-btn-next' onclick="navigate(1)" />
+  </div>
+
+  <div class="footer_rights" id='footer'>
+    <p class='english'>&copy; 2021 André Cavalcante. All rights reserved.</p>
+  </div>
+
+</body>
+
+</html>
