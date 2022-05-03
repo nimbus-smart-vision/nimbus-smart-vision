@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: 'Rubik', 'Arial', sans-serif;
   margin: 0;
 }
 
@@ -54,7 +54,7 @@ body {
   background: #0d72b9;
   height: 6px;
   display: block;
-  content: "";
+  content: '';
   border-radius: 10px;
   margin: 8px 0 0 38px;
 }
@@ -111,7 +111,7 @@ body {
   opacity: 0;
   height: 6px;
   display: block;
-  content: "";
+  content: '';
   border-radius: 10px;
   position: relative;
   margin-top: 2px;
@@ -207,6 +207,15 @@ body {
   padding-top: 70px;
 }
 
+.product-flow-pic {
+  height: 450px;
+  margin: 20px 0 50px 0;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+}
+
 .project-line {
   margin-top: 1.5%;
   margin-left: 10%;
@@ -221,7 +230,7 @@ body {
   display: inline-block;
   height: 200px;
   border-radius: 7px;
-  background-image: url("./images/dummyProjects.jpeg");
+  background-image: url('./images/dummyProjects.jpeg');
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -232,34 +241,34 @@ body {
 }
 
 .project-box-1 {
-  background-image: url("./images/tccproject.png");
+  background-image: url('./images/tccproject.png');
   background-size: 100% auto;
 }
 
 .project-box-2 {
-  background-image: url("./images/awsFirstProject.png");
+  background-image: url('./images/awsFirstProject.png');
   background-size: auto 100%;
 }
 
 .project-box-3 {
-  background-image: url("./images/project1-site2.png");
+  background-image: url('./images/project1-site2.png');
   background-size: 100% auto;
   background-position-x: center;
   background-position-y: top;
 }
 
 .project-box-4 {
-  background-image: url("./images/cdccproject.png");
+  background-image: url('./images/cdccproject.png');
   background-size: 100% auto;
 }
 
 .project-box-5 {
-  background-image: url("./images/csvConverter.png");
+  background-image: url('./images/csvConverter.png');
   background-size: 90% auto;
 }
 
 .project-box-6 {
-  background-image: url("./images/greenHouse.png");
+  background-image: url('./images/greenHouse.png');
   background-size: 100% auto;
 }
 
@@ -329,7 +338,7 @@ body {
   height: 2px;
   text-align: center;
   display: block;
-  content: "";
+  content: '';
   width: 80%;
   margin-top: 100px;
   margin-left: 10%;
@@ -403,7 +412,7 @@ body {
   height: 2px;
   text-align: center;
   display: block;
-  content: "";
+  content: '';
   width: 80%;
   margin-top: 100px;
   margin-left: 10%;
@@ -429,7 +438,7 @@ body {
 
 .life-background_title:before {
   background: #333;
-  content: "";
+  content: '';
   height: 2px;
   width: 80px;
   margin: 0 10px;
@@ -439,7 +448,7 @@ body {
 
 .life-background_title:after {
   background: #333;
-  content: "";
+  content: '';
   height: 2px;
   width: 80px;
   margin: 0 10px;
