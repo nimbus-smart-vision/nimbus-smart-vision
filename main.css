@@ -230,6 +230,7 @@ body {
 }
 
 .workflow-text-topic h3 {
+  color: #353535;
   font-size: 1.5rem;
   font-weight: bolder;
   margin: 0 0 10px 0;
