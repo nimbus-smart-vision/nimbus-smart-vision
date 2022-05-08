@@ -202,18 +202,73 @@ body {
   display: inline;
 }
 
-.projects {
+.work {
   text-align: center;
   padding-top: 70px;
 }
 
-.product-flow-pic {
-  height: 450px;
-  margin: 20px 0 50px 0;
+.workflow {
+  margin-left: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+.workflow-text {
+  margin-top: 0;
+  padding: 0;
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+  margin: 0 20px;
+  text-align: justify;
+  font-weight: bolder;
+  color: #50555c;
+}
+
+.workflow-text-topic {
+  margin: 80px 0;
+}
+
+.workflow-text-topic h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 0 0 10px 0;
+  padding-top: 0;
+}
+
+.workflow-text-topic p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.workflow-pic {
+  display: inline-block;
+  vertical-align: middle;
   padding: 20px;
+  margin: 0 20px;
+  height: 550px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   border-radius: 7px;
+}
+
+.work:after {
+  background: rgb(82, 82, 82);
+  height: 2px;
+  text-align: center;
+  display: block;
+  content: '';
+  width: 80%;
+  margin-top: 100px;
+  margin-left: 10%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.projects {
+  text-align: center;
+  /* padding-top: 70px; */
 }
 
 .project-line {
@@ -230,7 +285,7 @@ body {
   display: inline-block;
   height: 200px;
   border-radius: 7px;
-  background-image: url('./images/dummyProjects.jpeg');
+  background-image: url('./images/awsFirstProject.jpeg');
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -241,7 +296,7 @@ body {
 }
 
 .project-box-1 {
-  background-image: url('./images/tccproject.png');
+  background-image: url('./images/awsFirstProject.png');
   background-size: 100% auto;
 }
 
@@ -251,24 +306,24 @@ body {
 }
 
 .project-box-3 {
-  background-image: url('./images/project1-site2.png');
+  background-image: url('./images/awsFirstProject.png');
   background-size: 100% auto;
   background-position-x: center;
   background-position-y: top;
 }
 
 .project-box-4 {
-  background-image: url('./images/cdccproject.png');
+  background-image: url('./images/awsFirstProject.png');
   background-size: 100% auto;
 }
 
 .project-box-5 {
-  background-image: url('./images/csvConverter.png');
+  background-image: url('./images/awsFirstProject.png');
   background-size: 90% auto;
 }
 
 .project-box-6 {
-  background-image: url('./images/greenHouse.png');
+  background-image: url('./images/awsFirstProject.png');
   background-size: 100% auto;
 }
 
@@ -462,7 +517,7 @@ body {
 
 .life-background_main-info img {
   display: inline-block;
-  height: 200px;
+  height: 250px;
   margin: 0 15px;
   border-radius: 40px;
 }
@@ -671,13 +726,53 @@ body {
     text-align: center;
     width: 100%;
   }
-
+  
   .main-info__presentation {
     text-align: justify;
     width: 80%;
     margin-left: 10%;
     padding-left: 0;
     text-align: center;
+  }
+
+  .workflow {
+    text-align: center;
+  }
+  
+  .workflow-text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    font-weight: bolder;
+    color: #50555c;
+  }
+  
+  .workflow-text-topic {
+    margin: 30px 0;
+  }
+  
+  .workflow-text-topic h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    padding-top: 0;
+  }
+  
+  .workflow-text-topic p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+  
+  .workflow-pic {
+    margin: 60px 0 0 0 ;
+    display: block;
+    padding: 0;
+    object-fit: contain;
+    width: 60%;
+    height: 90%;
+    margin-left: 15%;
   }
 
   .partner-info {
@@ -751,6 +846,12 @@ body {
 
   .main-nav__item a:after {
     content: none;
+  }
+
+  .workflow-pic {
+    width: 80%;
+    height: 100%;
+    margin-left: 8%;
   }
 
   .partner-info {

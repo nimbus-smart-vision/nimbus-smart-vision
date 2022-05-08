@@ -30,7 +30,8 @@
           </a>
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__items">
+          <!-- TODO - trocar ul quando tiver produtos a serem exibidos -->
+          <!-- <ul class="main-nav__items">
             <li class="main-nav__item" onclick="sectionNavBar(1)">
               <a href="#projects" class="english"> Products</a>
             </li>
@@ -38,6 +39,17 @@
               <a href="#partners" class="english"> Partners</a>
             </li>
             <li class="main-nav__item" onclick="sectionNavBar(3)">
+              <a href="#background" class="english"> About</a>
+            </li>
+            <li class="main-nav__item" onclick="contactOverlayOn()">
+              <a href="javascript:void(0);" class="english"> Contact</a>
+            </li>
+          </ul> -->
+          <ul class="main-nav__items">
+            <li class="main-nav__item" onclick="sectionNavBar(1)">
+              <a href="#partners" class="english"> Partners</a>
+            </li>
+            <li class="main-nav__item" onclick="sectionNavBar(2)">
               <a href="#background" class="english"> About</a>
             </li>
             <li class="main-nav__item" onclick="contactOverlayOn()">
@@ -51,7 +63,6 @@
               onclick="responsiveHamburger()"
             ></i>
           </ul>
-          <ul></ul>
         </nav>
         <div class="main-info">
           <div class="main-info__portrait">
@@ -69,23 +80,47 @@
       </div>
     </header>
 
-    <div class="projects" id="projects">
+    <div class="work" id="work">
+      <div class="life-background_title english">
+        <h2>What We Do</h2>
+      </div>
+      <div class="workflow">
+        <div class="workflow-text">
+          <div class="workflow-text-topic">
+            <h3>Data</h3>
+            <p>
+              We receive your data applying all pre-processing needed to prepare them to be analized.
+            </p>
+          </div>
+          <div class="workflow-text-topic">
+            <h3>Analisys</h3>
+            <p>
+              Insights and solutions are generated from deeply analyses on your data.
+            </p>
+          </div>
+          <div class="workflow-text-topic">
+            <h3>Results</h3>
+            <p>
+              Objective outcomes are sent to you optimizing your time and improving your profits.
+            </p>
+          </div>
+        </div>
+        <img src="./images/productFlow.jpeg" class="workflow-pic" />
+      </div>
+    </div>
+    <!-- TODO - Retirar comentários quando tiver produtos a serem exibidos -->
+    <!-- <div class="projects" id="projects">
       <div class="life-background_title english">
         <h2>Products</h2>
-      </div>
-      <div class="product-flow">
-        <img src="./images/productFlow.jpeg" class="product-flow-pic">
       </div>
       <div class="project-line">
         <div class="project-box project-box-1">
           <div class="project-info">
             <div class="project-info-text english">
-              Take a look at my undergraduate thesis.
+              AWS Project with Serverless Framework.
             </div>
             <div class="repository-btn english">
-              <a
-                href="https://github.com/andre94cavalcante/CloudAnnotationLibrary"
-                target="_blank"
+              <a href="https://github.com/" target="_blank"
                 >Visit Repository &nbsp></a
               >
             </div>
@@ -97,9 +132,7 @@
               AWS Project with Serverless Framework.
             </div>
             <div class="repository-btn english">
-              <a
-                href="https://github.com/andre94cavalcante/MimooBackendChallenge"
-                target="_blank"
+              <a href="https://github.com/" target="_blank"
                 >Visit Repository &nbsp></a
               >
             </div>
@@ -108,10 +141,12 @@
         <div class="project-box project-box-3">
           <div class="project-info">
             <div class="project-info-text english">
-              This responsive website is actually one of my projects.
+              AWS Project with Serverless Framework.
             </div>
             <div class="repository-btn english">
-              <a href="#top">Go up &nbsp&#8593;</a>
+              <a href="https://github.com/" target="_blank"
+                >Visit Repository &nbsp></a
+              >
             </div>
           </div>
         </div>
@@ -120,13 +155,11 @@
         <div class="project-box project-box-4">
           <div class="project-info">
             <div class="project-info-text english">
-              Pioneering CDCC's 3D printing basin project.
+              AWS Project with Serverless Framework.
             </div>
             <div class="repository-btn english">
-              <a
-                href="https://drive.google.com/file/d/1rk1EI0udS73eS6wnIEfdiMsqaxnwo5Z3/view?usp=sharing"
-                target="_blank"
-                >Take a look at the paper &nbsp></a
+              <a href="https://github.com/" target="_blank"
+                >Visit Repository &nbsp></a
               >
             </div>
           </div>
@@ -134,13 +167,10 @@
         <div class="project-box project-box-5">
           <div class="project-info">
             <div class="project-info-text english">
-              API gets .CSV files, builds a MongoDB database and returns a JSON
-              response.
+              AWS Project with Serverless Framework.
             </div>
             <div class="repository-btn english">
-              <a
-                href="https://github.com/andre94cavalcante/csv-converter"
-                target="_blank"
+              <a href="https://github.com/" target="_blank"
                 >Visit Repository &nbsp></a
               >
             </div>
@@ -149,19 +179,17 @@
         <div class="project-box project-box-6">
           <div class="project-info">
             <div class="project-info-text english">
-              Automated Greenhouse built for the Embedded Systems Discipline.
+              AWS Project with Serverless Framework.
             </div>
             <div class="repository-btn english">
-              <a
-                href="https://github.com/andre94cavalcante/AutomatedGreenhouse"
-                target="_blank"
+              <a href="https://github.com/" target="_blank"
                 >Visit Repository &nbsp></a
               >
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="partners" id="partners">
       <div class="life-background_title english">
@@ -205,6 +233,7 @@
             <div class="partner-credentials">
               <h2>Master - System of Control, Robotics and Machine Learning</h2>
               <h2>Bachelor - Mechatronics Engeneering</h2>
+              <h2>AWS Architect</h2>
             </div>
             <div class="partner-text">
               <p>
@@ -234,8 +263,7 @@
           <img src="./images/eesc_fachada.png" />
           <div class="life-background_main-text">
             <h3 class="english">
-              Beginning of the story - University of São
-              Paulo
+              Beginning of the story - University of São Paulo
             </h3>
             <h3 class="period english">Since 2019</h3>
             <h3 class="subTitle english">Brazil</h3>
@@ -338,7 +366,9 @@
     </div>
 
     <div class="footer_rights" id="footer">
-      <p class="english">&copy; 2022 Nimbus Smart Vision. All rights reserved.</p>
+      <p class="english">
+        &copy; 2022 Nimbus Smart Vision. All rights reserved.
+      </p>
     </div>
   </body>
 </html>

@@ -20,7 +20,9 @@ const responsiveHamburger = () => {
 };
 
 let currentSection = 0;
-const sections = ["top", "projects", "partners", "background"];
+// TODO - Trocar Arrays quando tiver produtos a serem exibidos
+// const sections = ["top", "projects", "partners", "background"];
+const sections = ["top", "partners", "background"];
 const navigate = (updown) => {
   if (
     currentSection + updown >= 0 &&
