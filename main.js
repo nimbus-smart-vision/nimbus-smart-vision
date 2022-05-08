@@ -60,6 +60,6 @@ const contactOverlayOff = () => {
     "contact-overlay-options-card"
   )[0].style.display = "none";
   if (window.innerWidth >= 800) {
-    document.getElementsByClassName("social_media")[0].style.display = "block";
+    document.getElementsByClassName("social_media")[0].style.display = "fixed";
   }
 };

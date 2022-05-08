@@ -79,7 +79,6 @@ body {
   text-align: right;
   list-style: none;
   vertical-align: middle;
-  display: flex;
 }
 
 .main-nav__item {
@@ -615,17 +614,18 @@ body {
 .contact-overlay-options-card {
   display: none;
   z-index: 3;
-  width: 60%;
+  width: 80%;
   position: fixed;
   top: 100px;
-  left: 20%;
-  height: 250px;
+  left: 10%;
   background: rgb(240, 240, 240);
   border-radius: 5px;
 }
 
 .contact-msg {
-  font-size: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
   width: 80%;
   margin: 30px 10% 0 10%;
 }
@@ -635,9 +635,37 @@ body {
   color: black;
 }
 
+.contact-partners {
+  text-align: center;
+}
+
+.contact-partner-card {
+  display: inline-block;
+  padding: 20px 40px;
+  vertical-align: middle;
+  margin: 50px 2%;
+  background: rgb(235, 235, 235);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.contact-partner-profile {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
 .contact-overlay-options {
-  width: 40%;
-  margin: 20px 40%;
+  display: inline-block;
+  margin: 0 10px 0 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.contact-overlay-options h3 {
+  font-size: 1.5rem;
 }
 
 .contact-overlay-options a {
@@ -645,7 +673,7 @@ body {
 }
 
 .contact-overlay-options img {
-  width: 80px;
+  width: 60px;
   display: inline-block;
   margin: 0 10px;
   transition: ease 0.2s;
@@ -686,18 +714,6 @@ body {
   padding: 9px;
   border-radius: 3px;
   background-color: #222;
-}
-
-@media screen and (max-width: 1450px) {
-  .contact-overlay-options-card {
-    width: 90%;
-    left: 5%;
-    height: 250px;
-  }
-  .contact-overlay-options {
-    width: 60%;
-    margin: 20px 39%;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -822,6 +838,26 @@ body {
     left: -15px;
   }
 
+  /* TODO - trocar main-nav__item e main-nav__items quando tiver produtos a serem exibidos  */
+  /* .main-nav__item {
+    display: block;
+    text-align: center;
+    padding: 40px 0 40px 6%;
+    margin: 0;
+  }
+
+  .main-nav__items {
+    display: none;
+    background-color: rgba(25, 26, 29, 1);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    height: 310px;
+    position: absolute;
+    top: 115px;
+  } */
+
   .main-nav__items {
     display: none;
     background-color: rgba(25, 26, 29, 1);
@@ -836,7 +872,7 @@ body {
   .main-nav__item {
     display: block;
     text-align: center;
-    padding: 40px 0 40px 6%;
+    padding: 55px 0 55px 6%;
     margin: 0;
   }
 
@@ -882,7 +918,13 @@ body {
   }
 
   .social_media {
-    display: none;
+    opacity: 30%;
+    right: 10px;
+    bottom: -5px;
+  }
+
+  .social_media img{
+    margin: 8px;
   }
 
   .nav-btn {
@@ -893,19 +935,56 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    height: 400px;
+    height: 650px;
   }
+
+  .contact-msg {
+    margin-top: 10px;
+  }
+
+  .contact-partners {
+    margin-top: 0;
+  }
+
+  .contact-partner-card{
+    /* margin: 20px 5px; */
+    margin: 10px 30px;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .contact-partner-profile {
+    width: 150px;
+  }
+
+  .contact-overlay-options h3 {
+    margin: 10px;
+  }
+
   .contact-overlay-options {
-    width: 60%;
-    margin: 50px 35%;
+    width: 100%;
+    margin: 0;
   }
 
   .contact-overlay-options img {
-    max-width: 80px;
-    min-width: 80px;
+    max-width: 60px;
     padding-bottom: 10px;
     margin-top: 20px 0 0 auto;
     transition: ease 0.2s;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .contact-overlay-options-card {
+    height: 610px;
+  }
+  
+  .contact-partner-card {
+    margin: 5px 0;
+  }
+
+  .contact-overlay-options img {
+    width: 50px;
   }
 }
 
@@ -922,22 +1001,27 @@ body {
     width: 40px;
   }
 
-  .contact-overlay-options {
-    width: 60%;
-    margin: 50px 25%;
+  .contact-overlay-options-card {
+    height: 580px;
   }
-}
 
-@media screen and (max-width: 350px) {
-  .contact-overlay-options {
-    width: 60%;
-    margin: 50px 0 50px 35%;
+  .contact-partners {
+    width: 100%;
+  }
+
+  .contact-partner-card{
+    width: 90%;
+  }
+
+  .contact-partner-profile {
+    width: 130px;
+  }
+
+  .contact-overlay-options h3{
+    font-size: 1.3rem;
   }
 
   .contact-overlay-options img {
-    display: block;
-    padding-bottom: 10px;
-    margin-top: 20px 0 0 auto;
-    transition: ease 0.2s;
+    width: 42px;
   }
 }
