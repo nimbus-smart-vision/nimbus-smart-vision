@@ -620,6 +620,8 @@ body {
   left: 10%;
   background: rgb(240, 240, 240);
   border-radius: 5px;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
 }
 
 .contact-msg {
